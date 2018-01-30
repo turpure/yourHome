@@ -68,6 +68,8 @@ jQuery(document).ready(function( $ ) {
               var top_space = 0;
               
               if( $('#header').length ) {
+                // 主页导航设置透明
+                //   $('#header').css('background-color','rgba(0,0,0,0)');
                 top_space = $('#header').outerHeight();
               }
               
