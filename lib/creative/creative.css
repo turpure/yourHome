@@ -1281,11 +1281,12 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 /*圆点*/
-.note {
-    color: #2f2f2f;
-    word-break: break-word!important;
-    word-break: break-all;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.7;
+.join-dot {
+    list-style-type:  disc;
+}
+.join-seq {
+    list-style-type:  decimal;
+}
+.chat-icon {
+    content: '\e834';
 }
