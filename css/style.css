@@ -529,9 +529,10 @@ body.mobile-nav-active #mobile-nav-toggle {
     background: #fff;
     padding: 80px 0;
 }
-
+/* about our image size */
 #about .about-container {
     background: url(../img/about-img.jpg) left top no-repeat;
+    background-size: 580px 340px;
 }
 
 #about .about-content {
@@ -1033,7 +1034,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 /* x */
 .col-sm-4{
-    margin-top: 30px;
+    margin-bottom: 30px;
 }
 .col-md-3{
     width: 50%;
