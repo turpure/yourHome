@@ -1002,6 +1002,9 @@ body.mobile-nav-active #mobile-nav-toggle {
     flex: 1 1 auto;
     padding: 1.25rem;
 }
+.card-body h5{
+    margin: 20px 0 10px 0;
+}
 
 .card-title {
     margin-bottom: 0.75rem;
