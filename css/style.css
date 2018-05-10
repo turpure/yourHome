@@ -533,6 +533,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 #about .about-container {
     background: url(../img/about-img.jpg) left top no-repeat;
     background-size: 580px 340px;
+    height: 340px;
+    font-size: 15px;
 }
 
 #about .about-content {
@@ -1042,5 +1044,43 @@ body.mobile-nav-active #mobile-nav-toggle {
 #team .member .pic img {
     width: 500px;
 }
+.row-icon{
+    width: 66px;
+    height: 66px;
+    float: left;
+    border-radius: 50%; 
+}
+.icon-1{
+    background: url(../img/icon/icon-1.png) no-repeat;
+}
+#services .row .service-item:hover .icon-1{
+    background: url(../img/icon/icon-1h.png) no-repeat;
+}
 
+.icon-2{
+    background: url(../img/icon/icon-2.png) no-repeat;
+}
+#services .row .service-item:hover .icon-2{
+    background: url(../img/icon/icon-2h.png) no-repeat;
+}
 
+.icon-3{
+    background: url(../img/icon/icon-3.png) no-repeat;
+}
+#services .row .service-item:hover .icon-3{
+    background: url(../img/icon/icon-3h.png) no-repeat;
+}
+
+.icon-4{
+    background: url(../img/icon/icon-4.png) no-repeat;
+}
+#services .row .service-item:hover .icon-4{
+    background: url(../img/icon/icon-4h.png) no-repeat;
+}
+
+.icon-5{
+    background: url(../img/icon/icon-5.png) no-repeat;
+}
+#services .row .service-item:hover .icon-5{
+    background: url(../img/icon/icon-5h.png) no-repeat;
+}
