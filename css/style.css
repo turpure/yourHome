@@ -1084,3 +1084,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 #services .row .service-item:hover .icon-5{
     background: url(../img/icon/icon-5h.png) no-repeat;
 }
+.col-md-8{
+    width: 100%;
+}
