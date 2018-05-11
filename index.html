@@ -265,7 +265,7 @@ Team Section
         <div class="row">
             <div class="col-md-3">
                 <div class="member">
-                    <div class="pic"><img thissrc="img/team-5.png" alt=""></div>
+                    <div class="pic"><img data-original="img/team-5.png" alt=""></div>
                     <h4></h4>
                     <span></span>
                     <!--<div class="social">-->
@@ -278,7 +278,7 @@ Team Section
             </div>
             <div class="col-md-3">
                 <div class="member">
-                    <div class="pic"><img thissrc="img/team-6.png" alt=""></div>
+                    <div class="pic"><img data-original="img/team-6.png" alt=""></div>
                     <h4></h4>
                     <span></span>
                     <!--<div class="social">-->
@@ -291,7 +291,7 @@ Team Section
             </div>
             <div class="col-md-3">
                 <div class="member">
-                    <div class="pic"><img thissrc="img/team-7.png" alt=""></div>
+                    <div class="pic"><img data-original="img/team-7.png" alt=""></div>
                     <h4></h4>
                     <span></span>
                     <!--<div class="social">-->
@@ -304,7 +304,7 @@ Team Section
             </div>
             <div class="col-md-3">
                 <div class="member">
-                    <div class="pic"><img thissrc="img/team-8.png" alt=""></div>
+                    <div class="pic"><img data-original="img/team-8.png" alt=""></div>
                     <h4></h4>
                     <span></span>
                     <!--<div class="social">-->
@@ -505,22 +505,22 @@ Contact Section
         </div>
         <div class="row">
             <div class="col-sm-4 col-md-2">
-                <span></span><img thissrc="img/ur/amazon.png" alt="">
+                <span></span><img data-original="img/ur/amazon.png" alt="">
             </div>
             <div class="col-sm-4 col-md-2">
-                <span></span><img thissrc="img/ur/ebay.png" alt="">
+                <span></span><img data-original="img/ur/ebay.png" alt="">
             </div>
             <div class="col-sm-4 col-md-2">
-                <span></span><img style="height: 55px" thissrc="img/ur/aliexpress.jpg" alt="">
+                <span></span><img style="height: 55px" data-original="img/ur/aliexpress.jpg" alt="">
             </div>
             <div class="col-sm-4 col-md-2">
-                <span></span><img thissrc="img/ur/wish.png" alt="">
+                <span></span><img data-original="img/ur/wish.png" alt="">
             </div>
             <div class="col-sm-4 col-md-2">
-            <span></span><img thissrc="img/ur/shopee.png" alt="">
+            <span></span><img data-original="img/ur/shopee.png" alt="">
         </div>
             <div class="col-sm-4 col-md-2">
-                <span></span><img thissrc="img/ur/joom.png" alt="">
+                <span></span><img data-original="img/ur/joom.png" alt="">
             </div>
         </div>
     </div>
@@ -676,7 +676,8 @@ Footer
     //     document.body.scrollTop = 0;  
     // };
 </script>
-<script language="javascript">  
+
+<!-- <script language="javascript">  
   
     imgs = document.getElementsByTagName("img");  
     imgsnum = imgs.length;  
@@ -685,6 +686,23 @@ Footer
             imgs[imgi].src = imgs[imgi].getAttribute('thissrc');  
     }  
       
-    </script> 
+    </script>  -->
+    <!-- 图片懒加载 -->
+    <script src="./lib/lazyload/jquery-1.11.0.min.js"></script>
+
+    <script src="./lib/lazyload/jquery.lazyload.min.js"></script>
+    <script src="./lib/lazyload/jquery.lazyload.js"></script>
+    
+    
+    
+    <script type="text/javascript" charset="utf-8">
+    
+      $(function() {
+    
+          $("img").lazyload({effect: "fadeIn"});
+    
+      });
+    
+    </script>
 </body>
 </html>
