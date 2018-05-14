@@ -667,6 +667,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     display: table;
     overflow: hidden;
     margin-bottom: 30px;
+    border-radius: 10px;
 }
 
 #portfolio .portfolio-item .details {
@@ -789,13 +790,13 @@ body.mobile-nav-active #mobile-nav-toggle {
 #team .member .pic {
     margin-bottom: 15px;
     overflow: hidden;
-    height: 260px;
+    height: 300px;
 }
 
 #team .member .pic img {
     /*max-width: 100%;*/
-    height: 280px;
-    width: 262px;
+    height: 300px;
+    border-radius: 10px;
 }
 
 #team .member h4 {
@@ -1034,6 +1035,9 @@ body.mobile-nav-active #mobile-nav-toggle {
     height:60px;
     color: #fff
 }
+.iad-top:hover{
+    background-color: #0094ff;
+}
 /* x */
 .col-sm-4{
     margin-bottom: 30px;
@@ -1083,4 +1087,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 #services .row .service-item:hover .icon-5{
     background: url(../img/icon/icon-5h.png) no-repeat;
+}
+.col-md-8{
+    width: 100%;
 }
