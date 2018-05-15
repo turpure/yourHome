@@ -672,7 +672,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #portfolio .portfolio-item .details {
     height: 260px;
-    background: #fff;
+    /* background: #fff; */
     display: table-cell;
     vertical-align: middle;
     opacity: 0;
@@ -688,12 +688,12 @@ body.mobile-nav-active #mobile-nav-toggle {
     -webkit-transform: translate3d(0, -15px, 0);
     transform: translate3d(0, -15px, 0);
     font-weight: 700;
-    color: #333333;
+    color: #fff;
 }
 
 #portfolio .portfolio-item .details span {
     display: block;
-    color: #666666;
+    color: #fff;
     font-size: 13px;
     transition: opacity 0.3s, -webkit-transform 0.3s;
     transition: transform 0.3s, opacity 0.3s;
@@ -1046,6 +1046,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 .col-md-3{
     width: 50%;
 }
+/* 停 */
 .row-icon{
     width: 66px;
     height: 66px;
