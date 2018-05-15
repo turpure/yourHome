@@ -531,7 +531,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 /* about our image size */
 #about .about-container {
-    /* background: url(../img/about-img.jpg) left top no-repeat; */
+    background: url(../img/about-img.jpg) left top no-repeat;
     background-size: 580px 340px;
     height: 340px;
     font-size: 15px;
@@ -795,6 +795,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #team .member .pic img {
     /*max-width: 100%;*/
+    width: 500px;
     height: 300px;
     border-radius: 10px;
 }
@@ -1044,9 +1045,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 .col-md-3{
     width: 50%;
-}
-#team .member .pic img {
-    width: 500px;
 }
 .row-icon{
     width: 66px;
