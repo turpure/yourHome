@@ -531,7 +531,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 /* about our image size */
 #about .about-container {
-    background: url(../img/about-img.jpg) left top no-repeat;
+    /* background: url(../img/about-img.jpg) left top no-repeat; */
     background-size: 580px 340px;
     height: 340px;
     font-size: 15px;
