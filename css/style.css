@@ -531,7 +531,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 /* about our image size */
 #about .about-container {
-    background: url(../img/about-img.jpg) left top no-repeat;
+    /* background: url(../img/about-img.jpg) left top no-repeat; */
     background-size: 580px 340px;
     height: 340px;
     font-size: 15px;
@@ -671,8 +671,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #portfolio .portfolio-item .details {
-    height: 260px;
-    /* background: #fff; */
+    height: 60px;
+    background: #fff;
     display: table-cell;
     vertical-align: middle;
     opacity: 0;
@@ -688,13 +688,14 @@ body.mobile-nav-active #mobile-nav-toggle {
     -webkit-transform: translate3d(0, -15px, 0);
     transform: translate3d(0, -15px, 0);
     font-weight: 700;
-    color: #fff;
+    color: #000;
 }
 
 #portfolio .portfolio-item .details span {
     display: block;
-    color: #fff;
+    color: #000;
     font-size: 13px;
+    margin-top: 10px;
     transition: opacity 0.3s, -webkit-transform 0.3s;
     transition: transform 0.3s, opacity 0.3s;
     transition: transform 0.3s, opacity 0.3s, -webkit-transform 0.3s;
