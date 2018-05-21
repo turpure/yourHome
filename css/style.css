@@ -962,13 +962,13 @@ body.mobile-nav-active #mobile-nav-toggle {
     width: 36px;
 }
 #contact .info .img1{
-    background: url(../img/icon/icon_all.png) 0 -167px no-repeat;
+    background: url(../img/icons/icon_all.png) 0 -167px no-repeat;
 }
 #contact .info .img2{
-    background: url(../img/icon/icon_all.png) -42px -167px no-repeat;
+    background: url(../img/icons/icon_all.png) -42px -167px no-repeat;
 }
 #contact .info .img3{
-    background: url(../img/icon/icon_all.png) -84px -167px no-repeat;
+    background: url(../img/icons/icon_all.png) -84px -167px no-repeat;
 }
 
 #contact .form #sendmessage {
