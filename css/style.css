@@ -54,7 +54,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Back to top button */
-.back-to-top {
+/* .back-to-top {
     position: fixed;
     display: none;
     background: rgba(0, 0, 0, 0.2);
@@ -82,7 +82,7 @@ h1, h2, h3, h4, h5, h6 {
 .back-to-top:hover {
     background: #03C4EB;
     color: #fff;
-}
+} */
 
 /*--------------------------------------------------------------
 # Welcome
@@ -883,14 +883,21 @@ body.mobile-nav-active #mobile-nav-toggle {
 #team .member .pic {
     margin-bottom: 15px;
     overflow: hidden;
-    height: 300px;
+    height: 300px; 
+    width: 500px;
+    border-radius: 10px;    
 }
 
 #team .member .pic img {
     width: 500px;
     height: 300px;
-    border-radius: 10px;
 }
+
+#team .member .pic:hover img{
+    border-radius: 10px;
+    border: 2px solid #03C4EB;
+}
+
 
 #team .member h4 {
     font-weight: 700;
@@ -919,6 +926,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     font-size: 18px;
     margin: 0 2px;
 }
+
 
 /* Contact Section
 --------------------------------*/
@@ -1139,7 +1147,8 @@ body.mobile-nav-active #mobile-nav-toggle {
     text-align: center;
     width: 60px;
     height:60px;
-    color: #fff
+    color: #fff;
+    transition: background 1s;
 }
 .iad-top:hover{
     background-color: #0094ff;
