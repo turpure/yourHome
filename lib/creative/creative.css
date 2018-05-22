@@ -981,6 +981,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     background-clip: border-box;
     border: 1px solid rgba(0, 0, 0, 0.125);
     border-radius: 0.25rem;
+    
 }
 
 .card > hr {
@@ -1002,7 +1003,8 @@ body.mobile-nav-active #mobile-nav-toggle {
     -webkit-box-flex: 1;
     -ms-flex: 1 1 auto;
     flex: 1 1 auto;
-    padding: 1.25rem;
+    padding:10px 10px 0;
+    overflow-y: auto;
 }
 .card-body h5{
     margin: 20px 0 10px 0;
@@ -1288,9 +1290,11 @@ body.mobile-nav-active #mobile-nav-toggle {
 /*圆点*/
 .join-dot {
     list-style-type:  disc;
+    padding-left: 30px;
 }
 .join-seq {
     list-style-type:  decimal;
+    padding-left: 30px;
 }
 .chat-icon {
     content: '\e834';

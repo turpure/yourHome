@@ -555,6 +555,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     margin-bottom: 0;
 }
 #about .about_row {
+    color: #000;
     width: 100%;
     height: 500px;
     float: left; 
@@ -657,6 +658,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #services .service-item {
     margin-bottom: 20px;
+    padding-left: 80px;
 }
 
 #services .service-icon {
@@ -881,15 +883,16 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #team .member .pic {
+    text-align: center;
     margin-bottom: 15px;
     overflow: hidden;
     height: 300px; 
-    width: 500px;
+    width: 555px;
     border-radius: 10px;    
 }
 
 #team .member .pic img {
-    width: 500px;
+    width: 555px;
     height: 300px;
 }
 
@@ -1156,6 +1159,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* x */
 .col-sm-4{
     margin-bottom: 30px;
+    
 }
 .col-md-3{
     width: 50%;
