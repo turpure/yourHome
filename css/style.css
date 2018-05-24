@@ -394,6 +394,11 @@ h1, h2, h3, h4, h5, h6 {
 
 #mobile-nav-toggle i {
     color: #fff;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    background: url(../img/icons/Menu.png)
 }
 
 @media (max-width: 768px) {
@@ -563,16 +568,14 @@ body.mobile-nav-active #mobile-nav-toggle {
     padding-top: 20px;
     line-height: 2.5em
 }
-#about .about_row .welfare{
-    width: 100%;
+#about .about_row img{
     height: 420px;
 }
 #about .about_row .welfare ul{
-    background-color: #fff;
 }
 #about .about_row .welfare ul li{
     float: left;
-    margin: 0 10px 10px 10px;
+    margin: 0 10px 10px 25px;
     list-style: none;
     width: 280px;
     height: 60px;
@@ -580,7 +583,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #about .about_row .welfare ul li p{
     color: #000;
     height: 60px;
-    text-align: right;
+    text-align: left;
     font-size: 12px;
 }
 #about .about_row .welfare ul li p span{
@@ -588,65 +591,12 @@ body.mobile-nav-active #mobile-nav-toggle {
     display: inline-block;
     width: 60px;
     height: 58px;
-    margin-left: 10px;
+    margin-right: 10px;
     background-size: 264px 230px;
     background-color: #fff;
     border-radius: 50%
 }
-#about .about_row .welfare ul li:nth-child(1)  p span{
-    background: url(../img/icons/welfare-icon.png) -206px 0 no-repeat;
-    background-size: 264px 230px;
-}
-#about .about_row .welfare ul li:nth-child(2)  p span{
-    background: url(../img/icons/welfare-icon.png) -69px -78px no-repeat;
-    background-size: 264px 230px;
-}
-#about .about_row .welfare ul li:nth-child(3)  p span{
-    background: url(../img/icons/welfare-icon.png) -206px -156px no-repeat;
-    margin-right: 70px;
-    background-size: 264px 230px;
-}
-#about .about_row .welfare ul li:nth-child(4)  p span{
-    background: url(../img/icons/welfare-icon.png) -68px 0 no-repeat;
-    background-size: 264px 230px;
-    margin-right: 70px;
-}
-#about .about_row .welfare ul li:nth-child(5)  p span{
-    background: url(../img/icons/welfare-icon.png) 1px -156px no-repeat;
-    background-size: 264px 230px;
-}
-#about .about_row .welfare ul li:nth-child(6)  p span{
-    background: url(../img/icons/welfare-icon.png) -221px -80px no-repeat;
-    background-size: 280px 235px;
-}
-#about .about_row .welfare ul li:nth-child(7)  p span{
-    background: url(../img/icons/welfare-icon.png) 0 -78px no-repeat;
-    margin-right: 70px;
-    background-size: 264px 230px;
-}
-#about .about_row .welfare ul li:nth-child(8)  p span{
-    background: url(../img/icons/welfare-icon.png)  no-repeat;
-    background-size: 264px 230px;
-    margin-right: 70px;
-}
-#about .about_row .welfare ul li:nth-child(9)  p span{
-    background: url(../img/icons/welfare-icon.png) -159px -4px no-repeat;
-    background-size: 300px 270px;
-}
-#about .about_row .welfare ul li:nth-child(10)  p span{
-    background: url(../img/icons/welfare-icon.png) -137px -78px no-repeat;
-    background-size: 264px 230px;
-}
-#about .about_row .welfare ul li:nth-child(11)  p span{
-    background: url(../img/icons/welfare-icon.png) -137px -155px  no-repeat;
-    background-size: 264px 230px;
-    margin-right: 70px;
-}
-#about .about_row .welfare ul li:nth-child(12)  p span{
-    background: url(../img/icons/welfare-icon.png) -68px -156px no-repeat;
-    background-size: 264px 230px;
-    margin-right: 70px;
-}
+
 
 /* Services Section
 --------------------------------*/
@@ -950,6 +900,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #contact .info p {
+    width: 230px;
     padding: 0 0 10px 50px;
     line-height: 24px;
 }
@@ -967,7 +918,10 @@ body.mobile-nav-active #mobile-nav-toggle {
 #contact .info .img3{
     background: url(../img/icons/icon_all.png) -84px -167px no-repeat;
 }
-
+#contact .form{
+    height: 300px;
+    width: 600px
+}
 #contact .form #sendmessage {
     color: #03C4EB;
     border: 1px solid #03C4EB;
@@ -1035,6 +989,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #client img {
+    width: 100%;
     max-height: 100px;
     max-width: 150px;
     vertical-align: middle;
@@ -1138,7 +1093,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 .iad-top {
     display: none;
     color: rgba(0,0,0,1);
-    background: #03C4EB url(../img/ur/f.png) center 15px no-repeat;
+    background: #03C4EB url(../img/ur/f.png) center center no-repeat;
     border-radius:.6rem;
     line-height: 105px;
     font-size: 20px;
@@ -1213,3 +1168,212 @@ body.mobile-nav-active #mobile-nav-toggle {
 .col-md-8{
     width: 100%;
 }
+
+
+@media (min-width: 768px){
+    
+    #about .about_row .welfare ul li:nth-child(1)  p span{
+        background: url(../img/icons/welfare-icon.png) -206px 0 no-repeat;
+        background-size: 264px 230px;
+    }
+    #about .about_row .welfare ul li:nth-child(2)  p span{
+        background: url(../img/icons/welfare-icon.png) -69px -78px no-repeat;
+        background-size: 264px 230px;
+    }
+    #about .about_row .welfare ul li:nth-child(3)  p span{
+        background: url(../img/icons/welfare-icon.png) -206px -156px no-repeat;
+        background-size: 264px 230px;
+        margin-left: 70px
+    }
+    #about .about_row .welfare ul li:nth-child(4)  p span{
+        background: url(../img/icons/welfare-icon.png) -68px 0 no-repeat;
+        background-size: 264px 230px;
+        margin-left: 70px
+    }
+    #about .about_row .welfare ul li:nth-child(5)  p span{
+        background: url(../img/icons/welfare-icon.png) 1px -156px no-repeat;
+        background-size: 264px 230px;
+    }
+    #about .about_row .welfare ul li:nth-child(6)  p span{
+        background: url(../img/icons/welfare-icon.png) -221px -80px no-repeat;
+        background-size: 280px 235px;
+    }
+    #about .about_row .welfare ul li:nth-child(7)  p span{
+        background: url(../img/icons/welfare-icon.png) 0 -78px no-repeat;
+        background-size: 264px 230px;
+        margin-left: 70px
+    }
+    #about .about_row .welfare ul li:nth-child(8)  p span{
+        background: url(../img/icons/welfare-icon.png)  no-repeat;
+        background-size: 264px 230px;
+        margin-left: 70px
+    }
+    #about .about_row .welfare ul li:nth-child(9)  p span{
+        background: url(../img/icons/welfare-icon.png) -159px -4px no-repeat;
+        background-size: 300px 270px;
+    }
+    #about .about_row .welfare ul li:nth-child(10)  p span{
+        background: url(../img/icons/welfare-icon.png) -137px -78px no-repeat;
+        background-size: 264px 230px;
+    }
+    #about .about_row .welfare ul li:nth-child(11)  p span{
+        background: url(../img/icons/welfare-icon.png) -137px -155px  no-repeat;
+        background-size: 264px 230px;
+        margin-left: 70px
+    }
+    #about .about_row .welfare ul li:nth-child(12)  p span{
+        background: url(../img/icons/welfare-icon.png) -68px -156px no-repeat;
+        background-size: 264px 230px;
+        margin-left: 70px
+    }
+
+} 
+
+
+
+@media (max-width: 767px) {
+    #about .row .col-md-12{
+        padding: 0;
+    }
+    #about{
+        height: 2080px;
+    }
+    #about .about-text{
+        width: 100%;
+        margin: 0;
+        font-size: 12px;
+        height: 450px;
+    }
+    #about img{
+        width: 100%;
+        height: 220px;
+    }
+    #about .about_row{
+        margin: 0;
+        height: 1200px;
+    }
+    #about .about_row .col-md-12{
+        padding: 0;
+    }
+    #about .about_row img{
+        display: block;
+        height: 280px;
+    }
+    #about .about_row .welfare{
+        margin-top: 300px;
+        /* background-color: red; */
+        height: 800px;
+        width: 100%;
+    }
+    #about .about_row .welfare ul{
+        margin-top: 280px;
+        height: 100%;
+        width: 100%;
+        padding: 0;
+    }
+    #about .about_row .welfare ul li{
+        margin-right: 30px
+    }
+    #about .about_row .welfare ul li:nth-child(1)  p span{
+        background: url(../img/icons/welfare-icon.png) -206px 0 no-repeat;
+        background-size: 264px 230px;
+    }
+    #about .about_row .welfare ul li:nth-child(2)  p span{
+        background: url(../img/icons/welfare-icon.png) -69px -78px no-repeat;
+        background-size: 264px 230px;
+    }
+    #about .about_row .welfare ul li:nth-child(3)  p span{
+        background: url(../img/icons/welfare-icon.png) -206px -156px no-repeat;
+        background-size: 264px 230px;
+    }
+    #about .about_row .welfare ul li:nth-child(4)  p span{
+        background: url(../img/icons/welfare-icon.png) -68px 0 no-repeat;
+        background-size: 264px 230px;
+    }
+    #about .about_row .welfare ul li:nth-child(5)  p span{
+        background: url(../img/icons/welfare-icon.png) 1px -156px no-repeat;
+        background-size: 264px 230px;
+    }
+    #about .about_row .welfare ul li:nth-child(6)  p span{
+        background: url(../img/icons/welfare-icon.png) -221px -80px no-repeat;
+        background-size: 280px 235px;
+    }
+    #about .about_row .welfare ul li:nth-child(7)  p span{
+        background: url(../img/icons/welfare-icon.png) 0 -78px no-repeat;
+        background-size: 264px 230px;
+    }
+    #about .about_row .welfare ul li:nth-child(8)  p span{
+        background: url(../img/icons/welfare-icon.png)  no-repeat;
+        background-size: 264px 230px;
+    }
+    #about .about_row .welfare ul li:nth-child(9)  p span{
+        background: url(../img/icons/welfare-icon.png) -159px -4px no-repeat;
+        background-size: 300px 270px;
+    }
+    #about .about_row .welfare ul li:nth-child(10)  p span{
+        background: url(../img/icons/welfare-icon.png) -137px -78px no-repeat;
+        background-size: 264px 230px;
+    }
+    #about .about_row .welfare ul li:nth-child(11)  p span{
+        background: url(../img/icons/welfare-icon.png) -137px -155px  no-repeat;
+        background-size: 264px 230px;
+    }
+    #about .about_row .welfare ul li:nth-child(12)  p span{
+        background: url(../img/icons/welfare-icon.png) -68px -156px no-repeat;
+        background-size: 264px 230px;
+    }
+    .portfolio-item{
+        width: 345px;
+    }
+
+    #services .service-item {
+        margin-bottom: 20px;
+        padding-left: 35px;
+    }
+    #portfolio{
+        padding: 20px 0;
+    }
+    #portfolio .portfolio-item img {
+        width: 100%;
+        
+    }
+    #team .member .pic{
+        width: 100%;
+        height: 220px;
+    }
+    #team .member .pic img{
+        width: 100%;
+        height: 220px
+    }
+    #team .row .col-md-3{
+        width: 100%;
+    }
+    #contact .form{
+        height: 220px;
+        width: 100%;  
+    }
+    #client .col-sm-4 {
+        width: 50%;
+        float: left;
+    }
+    #footer .copyright {
+        font-size: 12px
+    }
+    #client {
+        margin-bottom: 0px;
+    }
+    .iad-top {
+        width: 40px;
+        height:40px;
+    }
+    .iad-top:hover{
+        background-color: #03C4EB ;
+
+    }
+
+}
+/* @media (min-width: 768px){
+    position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+} */
