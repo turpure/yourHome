@@ -384,7 +384,7 @@ h1, h2, h3, h4, h5, h6 {
     right: 0;
     top: 0;
     z-index: 999;
-    margin: 20px 10px 0 0;
+    margin: 20px 0px 0 0;
     border: 0;
     background: none;
     font-size: 24px;
@@ -1573,11 +1573,11 @@ body.mobile-nav-active #mobile-nav-toggle {
         background-repeat: no-repeat;
         background-size:100% 100%;
     }
-    #services {
+    /* #services {
         background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("../img/bgimgs/services-bg.jpg") fixed center center;
         background-size: 100% 100%;
         padding: 80px 0 60px 0;
-    }
+    } */
     #about .row .col-md-12{
         padding: 0;
     }
