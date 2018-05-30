@@ -357,7 +357,7 @@ Join Section
         </div>
         <div class="row">
                 <div class="col-sm-4">
-                        <div class="card" style="height:40rem;">
+                        <div class="card">
                             <div class="card-body">
                                 <h4 class="card-title"><strong> PHP工程师</strong></h4>
                                 <ul class="join-dot">
@@ -385,7 +385,7 @@ Join Section
                         </div>
                     </div>
             <div class="col-sm-4">
-                <div class="card" style="height:40rem;">
+                <div class="card" >
                     <div class="card-body">
                         <h4 class="card-title"><strong>Amazon/Wish/eBay/Joom/速卖通销售专员</strong></h4>
                         <ul class="join-dot">
@@ -408,7 +408,7 @@ Join Section
                 </div>
             </div>
             <div class="col-sm-4">
-                <div class="card" style="height:40rem;">
+                <div class="card" >
                     <div class="card-body">
                         <h4 class="card-title"><strong>产品开发专员</strong></h4>
                         <ul class="join-dot">
@@ -431,7 +431,7 @@ Join Section
                 </div>
             </div>
             <div class="col-sm-4">
-                <div class="card" style="height:40rem;">
+                <div class="card">
                     <div class="card-body">
                         <h4 class="card-title"><strong>ebay/SMT/amazom/wish销售主管</strong></h4>
                         <ul class="join-dot">
@@ -456,7 +456,7 @@ Join Section
                 </div>
             </div>
             <div class="col-sm-4">
-                    <div class="card" style="height:40rem;">
+                    <div class="card" >
                         <div class="card-body">
                             <h4 class="card-title"><strong>线下采购/驻厂跟单/服饰采购</strong></h4>
                             <ul class="join-dot">
@@ -481,7 +481,7 @@ Join Section
                     </div>
                 </div>
                 <div class="col-sm-4">
-                    <div class="card" style="height:40rem;">
+                    <div class="card" >
                         <div class="card-body">
                             <h4 class="card-title"><strong>数据分析员/数据分析师/电商数据分析</strong></h4>
                             <ul class="join-dot">
@@ -598,7 +598,7 @@ Footer
         <div class="row">
             <div class="col-md-8">
                 <div class="copyright">
-                        Copyright ©2017 <strong>上海幽然实业有限公司</strong>&nbsp;&nbsp;| 
+                        Copyright ©2017 <strong>上海幽然实业有限公司</strong>&nbsp;&nbsp;<br /> 
                     <img data-original="./img/icons/icon-police.png" alt="" style="margin-top: -5px">&nbsp;沪ICP备18010597号-1
                 </div>
             </div>
@@ -636,112 +636,112 @@ Footer
 
 <script>
     window.onload=function(){
-    var map = new BMap.Map("map");
-    map.centerAndZoom('上海', 15);
+        var map = new BMap.Map("map");
+        map.centerAndZoom('上海', 15);
 
-    map.enableScrollWheelZoom();    //启用滚轮放大缩小，默认禁用
-    map.enableContinuousZoom();    //启用地图惯性拖拽，默认禁用
-    map.addControl(new BMap.NavigationControl());  //添加默认缩放平移控件
-    map.addControl(new BMap.OverviewMapControl()); //添加默认缩略地图控件
-
-
-    var localSearch = new BMap.LocalSearch(map);
-    localSearch.enableAutoViewport(); //允许自动调节窗体大小
+        map.enableScrollWheelZoom();    //启用滚轮放大缩小，默认禁用
+        map.enableContinuousZoom();    //启用地图惯性拖拽，默认禁用
+        map.addControl(new BMap.NavigationControl());  //添加默认缩放平移控件
+        map.addControl(new BMap.OverviewMapControl()); //添加默认缩略地图控件
 
 
-    //var keyword = $("#address").text();
-    var keyword = '上海市浦东新区金桥镇新金桥路1295号';
-    localSearch.setSearchCompleteCallback(function (searchResult) {
-        var poi = searchResult.getPoi(0);
-        map.centerAndZoom(poi.point, 18);
-        var marker = new BMap.Marker(new BMap.Point(poi.point.lng, poi.point.lat));  // 创建标注，为要查询的地方对应的经纬度
-        map.addOverlay(marker);
-        var infoWindow = new BMap.InfoWindow("<p style='font-size:14px;'>" + keyword + "</p>");
-        marker.addEventListener("click", function () {
-            this.openInfoWindow(infoWindow);
+        var localSearch = new BMap.LocalSearch(map);
+        localSearch.enableAutoViewport(); //允许自动调节窗体大小
+
+
+        //var keyword = $("#address").text();
+        var keyword = '上海市浦东新区金桥镇新金桥路1295号';
+        localSearch.setSearchCompleteCallback(function (searchResult) {
+            var poi = searchResult.getPoi(0);
+            map.centerAndZoom(poi.point, 18);
+            var marker = new BMap.Marker(new BMap.Point(poi.point.lng, poi.point.lat));  // 创建标注，为要查询的地方对应的经纬度
+            map.addOverlay(marker);
+            var infoWindow = new BMap.InfoWindow("<p style='font-size:14px;'>" + keyword + "</p>");
+            marker.addEventListener("click", function () {
+                this.openInfoWindow(infoWindow);
+            });
+            //marker.setAnimation(BMAP_ANIMATION_BOUNCE); //跳动的动画
         });
-        //marker.setAnimation(BMAP_ANIMATION_BOUNCE); //跳动的动画
-    });
-    localSearch.search(keyword);
+        localSearch.search(keyword);
 
-    /*底部微信特效*/
-    /*$(function(){
-        $('#wx').hover(function(){
-                $("#wx img").stop().fadeIn();
-            },function(){
-                $("#wx img").stop().fadeOut();
-            }
-        )
-    })*/
-    /*返回顶部*/
-    $(function() {
-        $(window).scroll(function() {
-            if ($(window).scrollTop() > 500) {
-                $(".iad-top").fadeIn();
-            } else {
-                $(".iad-top").fadeOut();
-            }
+        /*底部微信特效*/
+        /*$(function(){
+            $('#wx').hover(function(){
+                    $("#wx img").stop().fadeIn();
+                },function(){
+                    $("#wx img").stop().fadeOut();
+                }
+            )
+        })*/
+        /*返回顶部*/
+        $(function() {
+            $(window).scroll(function() {
+                if ($(window).scrollTop() > 500) {
+                    $(".iad-top").fadeIn();
+                } else {
+                    $(".iad-top").fadeOut();
+                }
+            });
+            $(".iad-top").click(function() {
+                $('body,html').animate({scrollTop: 0},400);
+                return false;
+            });
         });
-        $(".iad-top").click(function() {
-            $('body,html').animate({scrollTop: 0},400);
-            return false;
+        /*ie抖动兼容*/
+        $(function(){
+            $('body').on("mousewheel", function() {
+                if(event.preventDefault){
+                    event.preventDefault();
+                }else{
+                    window.event.returnValue = false;
+                }
+                var wheelDelta = event.wheelDelta;
+                var currentScrollPosition = window.pageYOffset;
+                window.scrollTo(0, currentScrollPosition - wheelDelta);
+            })
         });
-    });
-    /*ie抖动兼容*/
-    $(function(){
-        $('body').on("mousewheel", function() {
-            if(event.preventDefault){
-                event.preventDefault();
-            }else{
-                window.event.returnValue = false;
-            }
-            var wheelDelta = event.wheelDelta;
-            var currentScrollPosition = window.pageYOffset;
-            window.scrollTo(0, currentScrollPosition - wheelDelta);
-        })
-    });
-    /*模态框居中和大小*/
-    function setModalMaxHeight(element) {
-        this.$element     = $(element);
-        this.$content     = this.$element.find('.modal-content');
-        var borderWidth   = this.$content.outerHeight() - this.$content.innerHeight();
-        var dialogMargin  = $(window).width() < 768 ? 20 : 60;
-        var contentHeight = $(window).height() - (dialogMargin + borderWidth);
-        var headerHeight  = this.$element.find('.modal-header').outerHeight() || 0;
-        var footerHeight  = this.$element.find('.modal-footer').outerHeight() || 0;
-        var maxHeight     = contentHeight - (headerHeight + footerHeight);
+        /*模态框居中和大小*/
+        function setModalMaxHeight(element) {
+            this.$element     = $(element);
+            this.$content     = this.$element.find('.modal-content');
+            var borderWidth   = this.$content.outerHeight() - this.$content.innerHeight();
+            var dialogMargin  = $(window).width() < 768 ? 20 : 60;
+            var contentHeight = $(window).height() - (dialogMargin + borderWidth);
+            var headerHeight  = this.$element.find('.modal-header').outerHeight() || 0;
+            var footerHeight  = this.$element.find('.modal-footer').outerHeight() || 0;
+            var maxHeight     = contentHeight - (headerHeight + footerHeight);
 
-        this.$content.css({
-            'overflow': 'hidden'
-        });
+            this.$content.css({
+                'overflow': 'hidden'
+            });
 
-        this.$element
-            .find('.modal-body').css({
-            'max-height': maxHeight,
-            'overflow-y': 'auto'
-        });
-    }
-
-    $('.modal').on('show.bs.modal', function() {
-        $(this).show();
-        setModalMaxHeight(this);
-    });
-
-    $(window).resize(function() {
-        if ($('.modal.in').length != 0) {
-            setModalMaxHeight($('.modal.in'));
+            this.$element
+                .find('.modal-body').css({
+                'max-height': maxHeight,
+                'overflow-y': 'auto'
+            });
         }
-    });
-    //refresh page  back to the top
-    // window.onbeforeunload = function(){
-    //     document.documentElement.scrollTop = 0;  
-    //     document.body.scrollTop = 0;  
-    // };
-    
-    // Lazy loading  
-      $(function() {
-          $("img").lazyload({effect: "fadeIn"})
-      });
+
+        $('.modal').on('show.bs.modal', function() {
+            $(this).show();
+            setModalMaxHeight(this);
+        });
+
+        $(window).resize(function() {
+            if ($('.modal.in').length != 0) {
+                setModalMaxHeight($('.modal.in'));
+            }
+        });
+        //refresh page  back to the top
+        // window.onbeforeunload = function(){
+        //     document.documentElement.scrollTop = 0;  
+        //     document.body.scrollTop = 0;  
+        // };
+        
+        // Lazy loading  
+        $(function() {
+            $("img").lazyload({effect: "fadeIn"})
+        });
     };
     
     </script>
