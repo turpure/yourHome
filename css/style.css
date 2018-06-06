@@ -1228,9 +1228,8 @@ body.mobile-nav-active #mobile-nav-toggle {
     #about .about_row .welfare ul li:nth-child(12)  p span{
         background: url(../img/icons/welfare-icon.png) -68px -156px no-repeat;
         background-size: 264px 230px;
-        margin-left: 70px；
+        margin-left: 70px;
     }
-
 }
 
 @media (min-width: 992px) and (max-width:1199px) {
