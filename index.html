@@ -41,6 +41,7 @@
 
     <!-- Main Stylesheet File -->
     <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/zoomify.min.css">
 
     <!-- =======================================================
       Theme Name: Imperial
@@ -632,10 +633,11 @@ Footer
 
 <script src="./lib/lazyload/jquery.lazyload.min.js"></script>
 <script src="./lib/lazyload/jquery.lazyload.js"></script>
-
+<script src="./js/zoomify.min.js"></script>
 
 <script>
     window.onload=function(){
+        $("#about img").zoomify();
         var map = new BMap.Map("map");
         map.centerAndZoom('上海', 15);
 
